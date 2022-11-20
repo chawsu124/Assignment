@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="todoListStyle.css">
+</head>
+<body>
+    <div class="todo-list-wapper">
+        <ul class="list">
+            <li>List Item 1 <span class="remove">Remove</span></li>
+            <li>List Item 2 <span class="remove">Remove</span></li>
+            <li>List Item 3 <span class="remove">Remove</span></li>
+            <li>List Item 4 <span class="remove">Remove</span></li>
+            <li>List Item 5 <span class="remove">Remove</span></li>
+        </ul>
+
+        <form action="" class="std-form">
+            <input type="text" class="new-task" value="my new task one">
+            <button type="submit" class="btn">New Task</button>
+        </form>
+    </div>
+
+
+    <script src="../jQuery/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            //var input_value = $("<li>My new task one<span class='remove'>Remove</span></li>");
+            //$(".list").append(input_value);
+            //$(".list").prepend(input_value);
+            // or //
+            //var my_item = $("li").eq(1);
+            // input_value.insertAfter(my_item);
+            //input_value.insertBefore(my_item);
+            
+            // var input_value = $("<li>", {
+            //     text: "My New Task",
+            //     append: "<span class='remove'>Remove</span>"
+            // });
+            // $(".list").append(input_value);
+            
+            // console.log($(".new-task").val());   
+            
+            $("form").submit(function(event){ // if click submit button
+                var input = $(".new-task").val(); // value of input button
+
+                var input_value = $("<li>", {
+                    text: input, // value of input button
+                    append: "<span class='remove'>Remove</span>" // add remove button
+                });
+
+                $(".list").append(input_value);
+                $(".new-task").val("");
+
+                event.preventDefault();
+                
+            })
+
+
+            // $(".remove").on("click",function() {
+            //     $(this).parent("li").remove();
+            // })
+
+            // the best way // to remove // if anyone <li> click // so, call $(this)
+            $(document).on("click",".remove", function(){
+                $(this).parent("li").remove();
+            })
+
+        })
+    </script>
+</body>
+</html>

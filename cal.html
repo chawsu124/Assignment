@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Calculator</title>
+    <style>
+        .cal-key {
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="cal">
+        <h1 class="display-box"></h1>
+        <div class="keypad"></div>
+    </div>
+    
+
+    <script>
+        let displayBox = document.querySelector(".display-box");
+        let keypad = document.querySelector(".keypad");
+        let calKey = ["+","-","*","/","="];
+
+        function showDisplay(x){
+            displayBox.innerHTML += x;
+        }
+        function calDisplay(){
+            let calText = displayBox.innerHTML;
+            displayBox.innerHTML = eval(calText);// eval() fun: is calculate int/string number.
+        }
+
+        for(i=0;i<=9;i++){
+            keypad.innerHTML += `<button class='key no-key' onclick='showDisplay(${i})'>${i}</button>`;
+        }
+
+        calKey.map((el) => {
+            if(el == "="){
+                keypad.innerHTML += `<button class="key cal-key" onclick="calDisplay()">${el}</button>`;
+            }
+            else{
+                keypad.innerHTML += `<button class='key cal-key' onclick="showDisplay('${el}')">${el}</button>`;
+            }
+            
+        })
+    </script>
+</body>
+</html>

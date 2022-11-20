@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample List & Navbar</title>
+
+    <style>
+        body {
+            background-color: blue;
+        }
+        .test-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .test-list li {
+            background-color: white;
+            margin-bottom: 10px;
+            width: 150px;
+            padding: 10px 15px;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            color: black;
+            transition: 0.5s;
+            border: 0px 5px 5px 0px;
+
+        }
+        .test-list li:hover {
+            background-color: chocolate;
+            font-weight: bold;
+        }
+        .box {
+            width: 200px;
+            padding: 10px;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+        .box-title {
+            text-transform: uppercase;
+            font-family: sans-serif;
+            border: 2px solid white;
+            color: black;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+        .nav-bar {
+            list-style-type: none;
+            padding: 10px;
+            background-color: white;
+        }
+        .nav-item {
+            display: inline-block;
+            padding: 10px 15px;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            transition: 0.5s;
+        }
+        .nav-item:hover {
+            background-color: cornflowerblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <fieldset class="box">
+        <legend class="box-title">My Test List</legend>
+        <ul class="test-list">
+            <li class="nav-item">Home</li>
+            <li class="nav-item">About</li>
+            <li class="nav-item">Services</li>
+            <li class="nav-item">Contact</li>
+        </ul>
+    </fieldset>
+
+
+    <nav>
+        <ul class="nav-bar">
+            <li class="nav-item">Home</li>
+            <li class="nav-item">About</li>
+            <li class="nav-item">Services</li>
+            <li class="nav-item">Contact</li>
+        </ul>
+    </nav>
+</body>
+</html>

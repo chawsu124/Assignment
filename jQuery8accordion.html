@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <link rel="stylesheet" href="accordionStyle.css">
+</head>
+
+<body>
+    <div class="accordion">
+        <h3 class="accordion-title">
+            Services
+        </h3>
+        <div class="accordion-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, enim perspiciatis laboriosam recusandae
+            est modi facilis vel voluptatem necessitatibus qui autem perferendis ex quia facere fugiat? Sunt debitis
+            incidunt nisi?
+        </div>
+    </div>
+
+    <script src="../jQuery/jquery-3.6.0.js"></script>
+    <script>
+        (function() {
+            $(".accordion-content").hide();
+
+            jQuery.fn.myHideShow = function () {
+                var $this = $(this);
+
+                return $this.slideDown(500, function () {
+                    $this.delay(1000).slideUp();
+                })
+            }
+
+            $(".accordion-title").click(function () {
+            $(this).siblings(".accordion-content").myHideShow();
+        })
+        })();
+
+    </script>
+</body>
+
+</html>

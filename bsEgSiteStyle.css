@@ -1,0 +1,24 @@
+
+#navSection {
+    margin: auto;
+    padding: auto;
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+    
+}
+nav ul {
+    margin-left: auto;
+    
+}
+.bigTitle {
+    font-family:Arial, Helvetica, sans-serif;
+    color: goldenrod;
+}
+.myQuote {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-style: italic;
+    text-indent: 35px;
+}
+.myCard {
+    background: black;
+}

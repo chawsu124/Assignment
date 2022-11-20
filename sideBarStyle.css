@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sidebar-menu {
+    max-width: 250px;
+    background-color: blanchedalmond;
+}
+#site-logo {
+    margin: 0;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+#site-logo a {
+    color: red;
+    font-size: 50px;
+    padding: 15px 20px;
+    
+}
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li a {
+    color: black;
+    padding: 20px 20px;
+    display: block;
+}
+.menu li a i {
+    display: inline-block;
+    margin-left: 20px;
+}
+.menu li a {
+    text-indent: 0;
+}
+.menu li:hover > a {
+    background-color: coral;
+    text-indent: 10px;
+}
+.txt {
+    display: inline-block;
+    margin-left: 20px;
+}

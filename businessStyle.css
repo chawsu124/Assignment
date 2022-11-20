@@ -1,0 +1,54 @@
+
+#menu {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+#logo {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 40px;
+    letter-spacing: 0.1em;
+}
+#left-menu li, #right-menu li {
+    margin-right: 20px;
+}
+#left-menu li a, #right-menu li a {
+    font-family: 'Abel', sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 0.1em;
+}
+
+.carousel-caption {
+    left: 50%;
+    top: 20%;
+    text-align: left;
+    font-size: 30px;
+    width: 500px;
+    height: 200px;
+}
+.product {
+    position: relative;
+}
+.new-item {
+    position: absolute;
+    z-index: 1;
+    background: red;
+    color: white;
+    padding: 5px 20px;
+    top: 5px;
+    left: 20px;
+}
+
+/* #left-explore, #mid-explore, #right-explore {
+    border-top: 2px solid #000;
+
+} */
+.small-text {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+hr {
+    background-color: black;
+    border: 2px solid black;
+    height: 3px;
+}

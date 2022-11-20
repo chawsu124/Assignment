@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM 3</title>
+    <style>
+        #result {
+            border: 1px solid black;
+            padding: 20px;
+            width: 500px;
+        }
+        div {
+            margin-bottom: 20px;
+        }
+        input {
+            margin-right: 10px;
+            width: 200px;
+            height: 50px;
+        }
+        button {
+            width: 100px;
+            height: 50px;
+            /* padding: 10px 15px; */
+        }
+    </style>
+</head>
+<body>
+   <h1 id="result">Text</h1>
+    <div>
+        <input type="text" id="text" onkeyup="changeText()">
+        <button id="setText">Change Text</button>
+    </div>
+    <div>
+        <input type="color" id="color" onchange="changeColor()">
+        <button id="setColor">Change Color</button>
+    </div>
+    <div>
+        <input type="number" id="fontsize">
+        <button id="setSize">Change FontSize</button>
+    </div>
+
+    <script>
+        let result = document.querySelector("#result");
+
+        let textInput = document.querySelector("#text");
+        let colorInput = document.querySelector("#color");
+        let fontsizeInput = document.querySelector("#fontsize");
+
+        let setTextBtn = document.querySelector("#setText");
+        let setColorBtn = document.querySelector("#setColor");
+        let setSizeBtn = document.querySelector("#setSize");
+
+        setTextBtn.addEventListener("click", () => {
+            let x = textInput.value;
+            result.innerHTML = x;
+            console.log(`Change text to "${x}"`);
+        })
+
+        setColorBtn.addEventListener("click", () => {
+            let y = colorInput.value;
+            result.style.color = y;
+            console.log(`Change color to "${y}"`);
+        })
+        setSizeBtn.addEventListener("click", () => {
+            let s = fontsizeInput.value;
+            result.style.fontSize = s + "px";
+            console.log(`Change color to "${s}"`);
+        })
+
+        function changeText() {
+            let x = textInput.value;
+            result.innerHTML = x;
+            console.log(`Change text to "${x}"`);
+        }
+        function changeColor() {
+            let y = colorInput.value;
+            result.style.color = y;
+            console.log(`Change color to "${y}"`);
+        }
+        
+    </script>
+</body>
+</html>

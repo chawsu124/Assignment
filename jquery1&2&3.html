@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery lesson 1, 2, 3</title>
+    <style>
+        ul li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <ul id="list">
+        <li class="item1" id="i1">Item 1</li> <!-- pervious item -->
+        <li class="item2">Item 2</li> <!-- pervious item -->
+        <li class="item3">Item 3</li> <!-- selected item -->
+        <li class="item4">Item 4</li> <!-- next item -->
+        <li class="item5">Item 5</li> <!-- next item -->
+    </ul>
+
+    <script src="../jQuery/jquery-3.6.0.slim.js"></script>
+    <script>
+        //  jQuery = $  //
+
+
+        // jQuery("#list li").css("background","green");
+        // $("#list li").css("background","green");
+
+        //jQuery("#list li:first-child").css("background","orange");
+        // $("#list li:first-child").css("background","orange");
+
+        // $("ul li").eq(0).css("background","blue"); 
+        // eq(index number of class/id you called [eg; list/ul])
+
+        // $("ul").children(".item2").css("background","yellow"); 
+        // ul is parent and li is children so you can called children("classname")
+
+        // $("ul").addClass("mylist"); // add new class to ul
+        //$("li").parent("#list").addClass("parentBox"); //add new class to ul (parent of li) 
+
+        // $(".item3").prevAll().css("border","2px solid green");//.prevAll is select all previous items from now selected item
+        //$(".item3").nextAll().css("border","2px solid blue");//.prevAll is select all next items from now selected item
+        //$(".item3").siblings().css("border","2px solid red");// li allitems are siblings of .item3 class
+    
+        //$("li").filter(".item4").css("border","2px solid green");//filter class .item4 from all li
+
+        $("body").find(".item2").css("border","2px solid cyan");// Find class .item2 in body
+        
+    </script>
+</body>
+</html>

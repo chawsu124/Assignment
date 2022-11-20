@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery lesson 4</title>
+    <style>
+        #box {
+            background-color: blue;
+            color: white;
+            padding: 30px;
+            margin: 50px auto;
+            max-width: 800px;
+        }
+        .btn {
+            background-color: black;
+            color: white;
+            border: 0 none;
+            outline: none;
+            display: inline-block;
+            padding: 15px 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .btn-wrapper {
+            text-align: center;
+        }
+
+        .hide-div {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla iusto id mollitia excepturi quaerat, odio corporis placeat harum ducimus iure qui, ut neque eveniet quia eius beatae magni. Enim, consectetur?
+    </div>
+    <div class="btn-wrapper">
+        <!-- lesson 4
+        <button class="btn" id="btn1">button 1</button>
+        <button class="btn" id="btn2">button 2</button> -->
+
+        <!-- lesson 5 -->
+        <button class="btn" id="toggle-btn">Toggle</button>
+        <button class="btn" id="show-btn">Show</button>
+        <button class="btn" id="hide-btn">Hide</button>   
+        
+        <button class="btn" id="slide-up-btn">Slide up</button>
+        <button class="btn" id="slide-down-btn">Slide down</button>
+        <button class="btn" id="slide-toggle-btn">Slide Toggle</button>
+
+        <button class="btn" id="fade-in-btn">Fade in</button>
+        <button class="btn" id="fade-out-btn">Fade out</button>
+        <button class="btn" id="fade-toggle-btn">Fade Toggle</button>
+    </div>
+
+
+    <script src="../jQuery/jquery-3.6.0.js"></script>
+    <script>
+        // lesson 4 //
+        // $("#btn1").click(() => {
+        //     alert("You click me! ");
+        // })
+
+
+
+        // $("#btn2").on("mouseenter", () => {
+        //     $("#box").css("border", "5px solid red");
+        // })
+        // $("#btn2").on("mouseleave", () => {
+        //     $("#box").css("border", "0 none");
+        // })
+
+
+
+        //lesson 5 // In JQuery
+        // $("#hide-btn").click(() => {
+        //      $("#box").hide();
+        //  })
+        // $("#show-btn").click(() => {
+        //      $("#box").show();
+        //  })
+
+        //  $("#toggle-btn").click(() => {
+        //      $("#box").toggle();
+        //  }) 
+
+
+         // In JavaScript //
+        //  $("#hide-btn").click(() => {
+        //      $("#box").addClass("hide-div");
+        //  })
+        //  $("#show-btn").click(() => {
+        //      $("#box").removeClass("hide-div");
+        //  })
+
+        //  $("#toggle-btn").click(() => {
+        //      $("#box").toggleClass("hide-div");
+        //  })
+
+         // JQuery 
+         $("#slide-up-btn").click(() => {
+             $("#box").slideUp();
+         })
+         $("#slide-down-btn").click(() => {
+             $("#box").slideDown();
+         })
+         $("#slide-toggle-btn").click(() => {
+             $("#box").slideToggle();
+         })
+
+         $("#fade-in-btn").click(() => {
+             $("#box").fadeIn();
+         })
+         $("#fade-out-btn").click(() => {
+             $("#box").fadeOut();
+         })
+         $("#fade-toggle-btn").click(() => {
+             $("#box").fadeToggle();
+         })
+    </script>
+</body>
+</html>

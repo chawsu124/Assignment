@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="../fontawesome/css/all.min.css">
+    <style>
+        * {
+            font-family: sans-serif;
+            /* color: #5d5d5a; */
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #ffa45c;
+        }
+        .login-form {
+            width: 350px;
+            border: 2px solid #ffcdab;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 200px auto;
+        }
+        .login-form legend {
+            font-size: 2em;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .form-input {
+            margin-bottom: 20px;
+        }
+        .form-input label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .form-input input {
+            display: block;
+            width: 100%;
+            border-radius: 10px;
+            padding: 10px 15px;
+            border: 2px solid #ffcdab;
+            background: #fff4e3;
+        }
+        .btn {
+            border-radius: 10px;
+            padding: 10px 15px;
+            border: 2px solid #ffcdab;
+            background-color: #5d5d5a;
+            color: #fff4e3;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .text-light {
+            color: #fff4e3;
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <fieldset class="login-form">
+            <legend class="text-light">
+                <i class="fas fa-unlock-alt text-light fa-fw"></i>
+                Login Form
+            </legend>
+            <div class="form-input">
+                <label for="" class="text-light">
+                    <i class="fas fa-user text-light fa-fw"></i>User Name
+                </label>
+                <input type="text">
+            </div>
+            <div class="form-input">
+                <label for="" class="text-light">
+                    <i class="fas fa-key text-light fa-fw"></i>Password
+                </label>
+                <input type="password">
+            </div>
+            <button class="btn">
+                <i class="fas fa-lock-open text-light fa-fw"></i>Login
+            </button>
+            <a href="#" class="reg-link">Register Account</a>
+        </fieldset>
+    </form>
+    
+    <script src="../fontawesome/js/all.min.js"></script>
+</body>
+</html>

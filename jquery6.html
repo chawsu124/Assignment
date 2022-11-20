@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery 6</title>
+    <style>
+        * {
+            color: black;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .list-wrapper {
+            list-style-type: none;
+            margin: 50px 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .list-wrapper li {
+            display: inline-block;
+        }
+
+        .list-wrapper li a {
+            display: block;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-bottom: 2px solid #222;
+        }
+
+        .list-wrapper li a.active-link {
+            color: #1a7def;
+            border-color: #1a7def;
+        }
+
+        .content {
+            max-width: 500px;
+            background-color: #1a7def;
+            color: white;
+            padding: 30px 50px;
+            margin: 0 auto 50px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- // lesson 6
+     <a href="https://www.google.com" id="myLink">Go to Google</a> -->
+
+
+    <div class="tab">
+        <ul class="list-wrapper">
+            <li><a href="#home" class="active-link">Home</a></li>
+            <li><a href="#about" >About</a></li>
+            <li><a href="#blog" >Blog</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div id="home" class="content">
+            <h3>Home</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum sed laudantium esse deleniti magnam
+                dolorem consequuntur libero aspernatur veritatis! Quis provident a veritatis odio ullam nihil debitis
+                maiores ut voluptatem?</p>
+        </div>
+        <div id="about" class="content">
+            <h3>About</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum sed laudantium esse deleniti magnam
+                dolorem consequuntur libero aspernatur veritatis! Quis provident a veritatis odio ullam nihil debitis
+                maiores ut voluptatem?</p>
+        </div>
+        <div id="blog" class="content">
+            <h3>Blog</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum sed laudantium esse deleniti magnam
+                dolorem consequuntur libero aspernatur veritatis! Quis provident a veritatis odio ullam nihil debitis
+                maiores ut voluptatem?</p>
+        </div>
+        <div id="portfolio" class="content">
+            <h3>Portfolio</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum sed laudantium esse deleniti magnam
+                dolorem consequuntur libero aspernatur veritatis! Quis provident a veritatis odio ullam nihil debitis
+                maiores ut voluptatem?</p>
+        </div>
+        <div id="contact" class="content">
+            <h3>Contact</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum sed laudantium esse deleniti magnam
+                dolorem consequuntur libero aspernatur veritatis! Quis provident a veritatis odio ullam nihil debitis
+                maiores ut voluptatem?</p>
+        </div>
+    </div>
+
+    <script src="../jQuery/jquery-3.6.0.js"></script>
+    <script>
+        // $("#myLink").click((event) => {
+        //     event.preventDefault(); // preventDefault() is stop from going to link
+        // })
+
+
+        $(".list-wrapper li a").click(function(event){
+            //let currentLink = $(this);
+            let currentLinkHref = $(this).attr("href");
+            //console.log(currentLinkHref);
+
+            $(".list-wrapper a").removeClass("active-link");
+            $(this).addClass("active-link");
+
+            $(".content").slideUp();
+            $(currentLinkHref).slideDown();
+
+            event.preventDefault();
+        })
+    </script>
+</body>
+
+</html>

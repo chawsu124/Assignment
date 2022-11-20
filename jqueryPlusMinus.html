@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery plus minus test</title>
+</head>
+<body>
+    <div>
+        <h2>jQuery plus minus test</h2>
+        <button id="plus">+</button>
+        <span id="counter">0</span>
+        <button id="minus">-</button>
+        <span id="warning"></span>
+    </div>
+
+    <script src="../jQuery/jquery-3.6.0.js"></script>
+    <script>
+        let counter = 0;
+
+       const warningChecker = () => {
+            if(counter > 5){
+                $("#warning").text("value is too high");
+            }
+            else if(counter < -5){
+                $("#warning").text("value is too low");
+            }
+            else{
+                $("#warning").text("");
+            }
+        };
+        // function warningChecker(){
+        //     if(counter > 5){
+        //         $("#warning").text("value is too high");
+        //     }
+        //     else if(counter < -5){
+        //         $("#warning").text("value is too low");
+        //     }
+        //     else{
+        //         $("#warning").text("");
+        //     }
+        // }
+
+        $(document).ready(() => {
+
+            $("#plus").css({
+                "background-color":"green",
+                "color":"white",
+                "border":"none",
+                "font-size":"24px",
+                "padding":"10px 15px",
+                "cursor":"pointer"
+            })
+            $("#minus").css({
+                "background-color":"red",
+                "color":"white",
+                "border":"none",
+                "font-size":"24px",
+                "padding":"10px 15px",
+                "cursor":"pointer"
+            })
+            $("#counter").css({
+                "padding": "10px",
+                "font-size":"24px"
+            })
+            $("#warning").css({
+                "padding": "10px",
+                "font-size":"24px"
+            })
+
+
+            $("#plus").on("click", () => {
+                $("#counter").text(++counter);
+                warningChecker();
+            })
+            $("#minus").on("click", () => {
+                $("#counter").text(--counter);
+                warningChecker();
+            })
+        })
+        
+    </script>
+</body>
+</html>

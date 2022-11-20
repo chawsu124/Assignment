@@ -1,0 +1,27 @@
+/* Accordion */
+body {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+
+.accordion {
+    max-width: 650px;
+    background-color: #f0fffe;
+    margin: 0 auto ;
+    margin-top: 30px;
+    box-shadow: 0px 0px 12px 1px #d8d8d8;
+}
+.accordion .accordion-title {
+    background: #7cd5d0;
+    font-size: 25px;
+    color: white;
+    margin: 0;
+    text-align: center;
+    padding: 10px 15px;
+}
+.accordion .accordion-content {
+    padding: 10px 20px;
+}

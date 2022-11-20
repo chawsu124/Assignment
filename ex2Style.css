@@ -1,0 +1,60 @@
+/* nav {
+    color: white;
+} */
+.em-text {
+    font-style: italic;
+}
+
+.app {
+    /* background: url(../images/) no-repeat top center; */
+    background-color: darkblue;
+    height: 500px;
+    overflow: hidden;
+    color: white;
+}
+.app h1 {
+    margin-top: 60px;
+}
+.main-app {
+    width: 75%;
+    margin-top: 20px;
+    border-radius: 40px;
+}
+.feature {
+    margin-top: 30px;
+}
+.demo {
+    width: 100%;
+    border: 1px solid #3e3e3e;
+    padding: 5px;
+}
+.bottom {
+    background-color: #1caa98;
+    color: white;
+    margin-top: 20px;
+    padding: 20px 0;
+}
+
+.big-logo {
+    width: 100%;
+    height: 80%;
+}
+section li {
+    list-style: none;
+}
+footer {
+    background-color: black;
+    color: white;
+    padding: 30px 0 20px 0;
+}
+footer li {
+    float: left;
+    list-style: none;
+    padding: 0 10px 0 10px;
+}
+footer a {
+    color: white;
+}
+footer p {
+    float: right;
+}
