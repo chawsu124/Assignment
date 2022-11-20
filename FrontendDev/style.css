@@ -1,0 +1,11 @@
+.styleTest {
+    width: 500px;
+    height: 700px;
+    background-color: lawngreen;
+}
+
+.changeImg {
+    height: 400px;
+    display: block;
+    margin-top: 20px;
+}

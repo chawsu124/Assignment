@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Testing</title>
+        
+    </head>
+    <body>
+        <button class="btn">Click</button>
+        <a title="Google" href="https://google.com">Google</a>
+        <a href="https://example.org">Example .org</a>
+        <a class="logo" href="https://example.com">Example .com</a>
+
+        <!-- In console, you should test these code:
+        document.querySelector("a[title]"); // output <a title="Google" href="https://google.com">Google</a>
+        document.querySelectorAll("a"); // output <a title="Google" href="https://google.com">Google</a>
+                                                <a href="https://example.org">Example .org</a>
+                                                <a class="logo" href="https://example.com">Example .com</a>
+        document.querySelector("a[href$=".org"]"); // output<a href="https://example.org">Example .org</a>
+        document.querySelector("a[href*="example"]"); // output<a title="Google" href="https://google.com">Google</a>
+                                                                <a class="logo" href="https://example.com">Example .com</a>
+        document.querySelector('a[href="https://example.org"]'); // output<a class="logo" href="https://example.com">Example .com</a> 
+        -->
+        
+        <script src="ClickProgrammaticallyJS.js"></script>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+body {
+    background-color: darkslategray;
+    color: white;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.commentInputContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    height: 100vh;
+}
+
+.commentInput {
+    width: 400px;
+    margin-bottom: 30px;
+}
+.commentContainer {
+    margin-top: 80px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.comment {
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
+    margin-bottom: 10px;
+    background-color: dimgray;
+    color: white;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.parent {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    background-color: green;
+    transition: bottom 0.4s ease-in-out;
+   
+}
+.toastAlertContainer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.toastAlertText {
+    margin-right: 10px;
+}

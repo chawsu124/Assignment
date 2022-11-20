@@ -1,0 +1,48 @@
+body {
+    background-color: #3d405b;
+    
+}
+.container {
+    max-width: 1000px;
+    margin-top: 100px;
+}
+.transition {
+    width: 200px;
+    height: 20px;
+    background-color: #ffc107;
+    margin-bottom: 20px;
+    /* transition-property: all; 
+    transition-duration: 2s;
+    transition-timing-function: ease; */
+
+    /* or */
+
+    transition: all 2s ease; 
+    /* transition: transition-property transition-duration transition-timing-function */
+    /* transition: width 2s ease;  */
+
+    /* transition-delay: 2s;// It is no need but sometimes use */
+}
+.startTransition {
+    width: 500px;
+    height: 50px;
+    background-color: green;
+    opacity: 0.8;
+}
+
+.transform {
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #ffc107;
+    margin-bottom: 20px;
+    /* transform: scale(2); */
+    /* transform: rotate(45deg); // deg --> degree */
+    /* transform: translateX(50px); // --> translate X direction*/
+    /* transform: translateY(100px); // | translate X direction */
+    transition: transform 2s ease-in-out;
+}
+.startTransform {
+    /* transform: scale(3) translateX(200px); */
+    transform: scale(3) translate(200px, 200px); /*translate: X value , Y value; */
+}

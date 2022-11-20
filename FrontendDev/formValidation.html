@@ -1,0 +1,45 @@
+ <!-- ---------Form Validatin------- -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Bootstrap Form</title>
+
+    <link rel="stylesheet" href="../../MybootstrapExercises/bootstrap/css/bootstrap.min.css">
+    
+ </head>
+ <body>
+    <div class="container my-5">
+        <h2 class="text-info text-center mb-5">Register To View Courses</h2>
+        <div class="col-md-6 mx-auto">
+            <form autocomplete="off" id="f1" >
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control rounded-0" id="name">
+                    <div class="invalid-feedback">Name must be between 5 and 15 chars</div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control rounded-0" id="email">
+                    <div class="invalid-feedback">Please provide valid email address</div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control rounded-0" id="password">
+                    <div class="invalid-feedback">Password must be between 6 and 20 chars</div>
+                </div>
+                <button type="submit" class="btn btn-primary disabled btn-block my-3 rounded-0 " id="btnC">Register</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="formValidationJS.js"></script>
+    <script src="../../MybootstrapExercises/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../MybootstrapExercises/bootstrap/js/popper.min.js"></script>
+    <script src="../../MybootstrapExercises/bootstrap/js/jquery.slim.min.js"></script>
+ </body>
+ </html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .container {
+                display: flex;
+                justify-content: center;
+                padding: 100px;
+            }
+            img {
+                width: 300px;
+                border-radius: 40px;
+                border: 10px solid blue;
+                transform: rotate(20deg);
+            }
+            .second {
+                z-index: 1;/*  because normal z-index value is 0 */
+            }
+            .first {
+                z-index: 2;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container"> 
+            <img src="fbPhoto.jpg" class="first" />
+            <img src="igPhoto.jpg" class="second" />
+            <img src="messengerPhoto.jpg" class="third" />
+        </div>
+    </body>
+</html>

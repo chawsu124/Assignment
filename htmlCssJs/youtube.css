@@ -1,0 +1,115 @@
+/* First column */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #F4F4F4;
+}
+.column {
+    width: 350px;
+    margin: 20px;
+    
+}
+.mid {
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.box {
+    /* height: 500px; */
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+.boxtitle {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.thumbnailContainer {
+    height: 200px;
+    overflow: hidden;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+.thumbnail {
+    width: 100%;
+ 
+}
+.performance {
+    margin-bottom: 10px;
+}
+.startContainer {
+    margin-bottom: 16px;
+}
+.start {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+.link {
+    color: #1C5FD4;
+}
+.comment {
+    margin-top: 15px;
+}
+
+/* Second column */
+.secondColTitle {
+    display: flex;
+    justify-content: space-between;
+}
+.ffs {
+    font-size: 18px;
+    margin-left: 8px;
+}
+.fa-angle-left {
+    margin-right: 20px;
+}
+.secondImage {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+.creator {
+    margin-bottom: 12px;
+}
+.op {
+    opacity: 0.5;
+}
+.fs {
+    font-size: 15px;
+}
+
+/* Third column */
+.subCount {
+    font-size: 34px;
+}
+.cg {
+    color: green;
+}
+.divider {
+    height: 1px;
+    background-color: lightgrey;
+    margin: 25px 0;/*  first value is for top & buttom and last value is for left & right */
+}
+.summary {
+    margin-bottom: 5px;
+}
+.summaryStat {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.summaryContainer {
+    margin-bottom: 10px;
+}
+.playList {
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 0;
+}
+.overEllipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

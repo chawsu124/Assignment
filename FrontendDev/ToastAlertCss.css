@@ -1,0 +1,29 @@
+body {
+    background-color: darkslategray;
+    color: white;
+    height: 100vh;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.btn {
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.parent {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+.toastAlert {
+    background-color: bisque;
+    padding: 20px;
+    color: black;
+    position: relative; /*if you want to put bottom: value; , you must be give position: relative or absolute; */
+    transition: bottom 0.4s ease-in-out;
+}

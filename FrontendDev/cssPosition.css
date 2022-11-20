@@ -1,0 +1,30 @@
+body {
+    background-color: gray;
+    color: white;
+}
+.parent {
+    background-color: black;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    margin-top: 300px;
+    position: relative;
+}
+.box {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    margin: 10px;
+}
+.box1 {
+    background-color: brown;
+}
+.box2 {
+    background-color: blue;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+.box3 {
+    background-color: white;
+}

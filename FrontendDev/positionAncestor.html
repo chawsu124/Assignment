@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Position ancestor offsetLeft offsetWidth</title>
+        <link rel="stylesheet" href="positionAncestorCss.css">
+
+    </head>
+    <body>
+        <!-- ancestor is the one that take parent which has not position: static; 
+                ancestor take the nearest parent -->
+        <div class="container">
+            <div class="level1" style="position: static;">
+                <div class="level2" style="position: relative;">
+                    <div class="level3">
+                        <div class="item item1">Customer Services </div>
+                        <div class="item item2">Profile </div>
+                        <!-- In this, (item1 and item2)'s ancestor is parent div level2 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="positionAncestorJs.js"></script>
+    </body>
+</html>

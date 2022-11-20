@@ -1,0 +1,84 @@
+.main {
+    margin-left: 400px;
+    margin-right: 400px;
+}
+.logo {
+    width: 4%;
+    margin-right: 500px;
+}
+.menu {
+    margin-bottom: 50px;
+}
+.menuItem {
+    text-decoration: none;
+    color: inherit;
+    margin-left: 30px;
+    font-size: 15px;
+}
+.menuItem:hover {
+    border-bottom-style: solid;
+}
+h1 {
+    display: inline-block;
+}
+.header {
+    margin-bottom: 20px;
+}
+.description {
+    margin-bottom: 20px;
+}
+.blockElement {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: lightgray;
+    height: 35px;
+    width: 300px;
+    border-radius: 15px;
+    outline: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 16px;
+}
+.signInBtn {
+    background-color: #0084ff;
+    border-radius: 24px;
+    border: none;
+    color: white;
+    padding: 2px 20px 0;
+    font-size: 19px;
+    height: 40px;
+    width: 100px;
+}
+.left {
+     display: inline-block;
+     width: 40%;
+}
+.inner {
+    width: 50%;
+}
+.right {
+    display: inline-block;
+    width: 40%;
+}
+.inputSpan {
+    margin-bottom: 20px;
+}
+.forgotpwd {
+    margin-bottom: 20px;
+}
+.appStoreImg {
+    width: 100%;
+}
+.rightImg {
+    width: 100%;
+    
+}
+.footer {
+    background-color: lightslategray;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+    padding: 50px;
+}
